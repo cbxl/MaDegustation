@@ -7,6 +7,12 @@ npm install
 
 npm run serve
 
+## Technos utilisées
+- VueJS
+- NodeJs
+- MongoDb
+- Sass
+
 ## Outils
 ### Gitflow
 Main > brancheNomDeLaPage > sousBrancheNomDeLaFonctionnalité
