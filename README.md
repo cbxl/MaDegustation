@@ -32,3 +32,13 @@ https://framer.com/share/Ma-d-gustation--kTYdmxAMwlrlf9gaIAt1/CZdjSEr5p
 ![image](https://user-images.githubusercontent.com/67960002/114878030-2271bd00-9e00-11eb-9bad-1bf9ca3422a3.png)
 ![image](https://user-images.githubusercontent.com/67960002/114878114-33223300-9e00-11eb-960e-67cff01f4a53.png)
 
+## Charte graphique 
+![image](https://user-images.githubusercontent.com/69767205/115713599-7cc9cb00-a376-11eb-8ea3-a368f564f188.png)
+
+gris-blanc: #D9D7D6
+noir: #060505
+bordeaux: #661427
+gris-vert: #7C7C7C
+gris: #74747C
+
+
