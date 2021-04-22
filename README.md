@@ -35,4 +35,10 @@ https://framer.com/share/Ma-d-gustation--kTYdmxAMwlrlf9gaIAt1/CZdjSEr5p
 ## Charte graphique 
 ![image](https://user-images.githubusercontent.com/69767205/115713599-7cc9cb00-a376-11eb-8ea3-a368f564f188.png)
 
+gris-blanc: #D9D7D6
+noir: #060505
+bordeaux: #661427
+gris-vert: #7C7C7C
+gris: #74747C
+
 
