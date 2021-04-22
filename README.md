@@ -33,6 +33,6 @@ https://framer.com/share/Ma-d-gustation--kTYdmxAMwlrlf9gaIAt1/CZdjSEr5p
 ![image](https://user-images.githubusercontent.com/67960002/114878114-33223300-9e00-11eb-960e-67cff01f4a53.png)
 
 ## Charte graphique 
-[Capture d’écran 2021-04-22 à 14 23 38](https://user-images.githubusercontent.com/69767205/115713599-7cc9cb00-a376-11eb-8ea3-a368f564f188.png)
+![image](https://user-images.githubusercontent.com/69767205/115713599-7cc9cb00-a376-11eb-8ea3-a368f564f188.png)
 )
 
