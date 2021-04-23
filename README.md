@@ -13,6 +13,9 @@ npm run serve
 - MongoDb
 - Sass
 
+## Lib
+- mbj36/vue-burger-menu
+
 ## Outils
 ### Gitflow
 Main > brancheNomDeLaPage > sousBrancheNomDeLaFonctionnalité
