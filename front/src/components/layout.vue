@@ -2,70 +2,68 @@
   <nav role="navigation">
     <div class="logo"></div>
     <h1 class="title">Accueil</h1>
-    <Slide right>
+    <Menu
+      class="menuBurger"
+      v-bind="this.$attrs"
+      @openMenu="openMenu"
+      @closeMenu="closeMenu"
+      right
+    >
+      <a href="#">Accueil</a>
       <a href="#">Ma cave</a>
       <a href="#">Ajouter une bouteille</a>
       <a href="#">Dernier ajout</a>
       <a href="#">La prochaine</a>
       <a href="#">Suggestion du jour</a>
-      <a href="#">Cahier de dégustations</a>
-    </Slide>
+      <a href="#">Cahier de degustations</a>
+    </Menu>
   </nav>
 </template>
 
 <script>
-import { Slide } from "vue-burger-menu";
+import Menu from "./menu";
 export default {
+  name: "slide",
   components: {
-    Slide,
+    Menu: Menu,
   },
-  data() {
-    return {
-      checked: false,
-    };
+  methods: {
+    openMenu() {
+      this.$emit("openMenu");
+    },
+    closeMenu() {
+      this.$emit("closeMenu");
+    },
   },
-  methods: {},
 };
 </script>
-
 <style scoped>
 nav {
   display: grid;
   height: 70px;
-  grid:
-    "logo title burger" auto
-    / 70px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid: "logo title menuBurger";
   background: grey;
 }
 
 .logo {
   grid-area: logo;
+  position: absolute;
   background: black;
-  size: 50px;
-  color: rgb(235, 18, 18);
+  width: 40px;
+  height: 30px;
+  left: 36px;
+  top: 20px;
 }
 .title {
   grid-area: title;
   text-align: center;
 }
-.burger {
-  grid-area: burger;
-  display: block;
-  margin: auto;
-}
-
-ul {
-  flex-direction: column;
-}
-li {
-  list-style-type: none;
+.menuBurger {
+  grid-area: menuBurger;
 }
 a {
   text-decoration: none;
-  color: black;
-}
-.menu {
-  position: absolute;
-  z-index: 1;
+  color: white;
 }
 </style>
