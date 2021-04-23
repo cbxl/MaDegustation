@@ -2,35 +2,29 @@
   <nav role="navigation">
     <div class="logo"></div>
     <h1 class="title">Accueil</h1>
-    <div class="burger">
-      <div class="icons">
-        <i v-if="!checked" class="fa fa-bars fa-2x" @click="toggle" />
-        <i v-if="checked" class="fas fa-times" @click="toggle"></i>
-      </div>
-      <ul v-show="checked" class="menu">
-        <a href="#"><li>Ma cave</li></a>
-        <a href="#"><li>Ajouter une bouteille</li></a>
-        <a href="#"><li>Dernier ajout</li></a>
-        <a href="#"><li>La prochaine</li></a>
-        <a href="#"><li>Suggestion du jour</li></a>
-        <a href="#"><li>Cahier de dégustations</li></a>
-      </ul>
-    </div>
+    <Slide right>
+      <a href="#">Ma cave</a>
+      <a href="#">Ajouter une bouteille</a>
+      <a href="#">Dernier ajout</a>
+      <a href="#">La prochaine</a>
+      <a href="#">Suggestion du jour</a>
+      <a href="#">Cahier de dégustations</a>
+    </Slide>
   </nav>
 </template>
 
 <script>
+import { Slide } from "vue-burger-menu";
 export default {
+  components: {
+    Slide,
+  },
   data() {
     return {
       checked: false,
     };
   },
-  methods: {
-    toggle() {
-      this.checked = !this.checked;
-    },
-  },
+  methods: {},
 };
 </script>
 
