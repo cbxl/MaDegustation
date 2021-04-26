@@ -38,22 +38,22 @@ export default {
 };
 </script>
 <style scoped>
+h1 {
+  color: var(--grey-light);
+}
 nav {
   display: grid;
   height: 70px;
   grid-template-columns: repeat(3, 1fr);
   grid: "logo title menuBurger";
-  background: grey;
+  background: var(--dark);
 }
 
 .logo {
   grid-area: logo;
-  position: absolute;
-  background: black;
-  width: 40px;
-  height: 30px;
-  left: 36px;
-  top: 20px;
+  position: relative;
+  background-size: cover;
+  background-image: url("../assets/logo-tire-bouchon.png");
 }
 .title {
   grid-area: title;
@@ -64,6 +64,6 @@ nav {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: var(--grey-light);
 }
 </style>

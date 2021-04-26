@@ -15,9 +15,12 @@ export default {
 </script>
 
 <style>
+@import "./variable.css";
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: var(--dark);
 }
 </style>

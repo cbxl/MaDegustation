@@ -1,5 +1,10 @@
 * {
-  --font-title: font-family: 'Cantarell', sans-serif; /*700*/
-  --font-nav: font-family: 'Play', sans-serif; /*700*/
-  --font: font-family: 'Catamaran', sans-serif; /*100, 300, 700*/
+  --font-title: "Cantarell", sans-serif; /*700*/
+  --font-nav: "Play", sans-serif; /*700*/
+  --font: "Catamaran", sans-serif; /*100, 300, 700*/
+  --dark: #060505;
+  --grey-light: #d9d7d6;
+  --red: #661427;
+  --grey-green: #7c7c7c;
+  --grey: #74747c;
 }
