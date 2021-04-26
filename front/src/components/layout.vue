@@ -40,6 +40,7 @@ export default {
 <style scoped>
 h1 {
   color: var(--grey-light);
+  font-family: var(--font-title);
 }
 nav {
   display: grid;
@@ -65,5 +66,6 @@ nav {
 a {
   text-decoration: none;
   color: var(--grey-light);
+  font-family: var(--font-nav);
 }
 </style>
