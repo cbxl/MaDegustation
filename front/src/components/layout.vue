@@ -9,13 +9,13 @@
       @closeMenu="closeMenu"
       right
     >
-      <a href="#">Accueil</a>
-      <a href="#">Ma cave</a>
-      <a href="#">Ajouter une bouteille</a>
-      <a href="#">Dernier ajout</a>
-      <a href="#">La prochaine</a>
-      <a href="#">Suggestion du jour</a>
-      <a href="#">Cahier de degustations</a>
+      <router-link to="/">Accueil</router-link>
+      <router-link to="/maCave">Ma cave</router-link>
+      <router-link to="/ajoutBouteille">Ajouter une bouteille</router-link>
+      <router-link to="/maBouteille">Dernier ajout</router-link>
+      <router-link to="/maBouteille">La prochaine</router-link>
+      <router-link to="/maBouteille">Suggestion du jour</router-link>
+      <router-link to="/livreDegustation">Cahier de degustations</router-link>
     </Menu>
   </nav>
 </template>
