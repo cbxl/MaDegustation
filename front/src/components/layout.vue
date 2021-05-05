@@ -44,7 +44,7 @@ h1 {
 }
 nav {
   display: grid;
-  height: 70px;
+  height: 10vh;
   grid-template-columns: repeat(3, 1fr);
   grid: "logo title menuBurger";
   background: var(--dark);
