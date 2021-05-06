@@ -1,22 +1,33 @@
 <template>
   <div>
-    <div class="container" id="my-cellar">
-      <div class="text">ma cave</div>
-    </div>
+    
+    <router-link to="/maCave"
+      ><div class="container" id="my-cellar">
+        <div class="text">Ma cave</div>
+      </div></router-link
+    >
     <div class="row">
-      <div class="container" id="last-add">
-        <div class="text">dernier ajout</div>
-      </div>
-      <div class="container" id="next-one">
-        <div class="text">La prochaine ?</div>
-      </div>
+      <router-link to="/maBouteille"
+        ><div class="container" id="last-add">
+          <div class="text">Dernier ajout</div>
+        </div></router-link
+      >
+      <router-link to="/maBouteille"
+        ><div class="container" id="next-one">
+          <div class="text">La prochaine ?</div>
+        </div></router-link
+      >
     </div>
-    <div class="container" id="suggestion-of-day">
-      <div class="text">Suggestion du jour</div>
-    </div>
-    <div class="container" id="degustation-book">
-      <div class="text">Cahier de degustation</div>
-    </div>
+    <router-link to="/maBouteille"
+      ><div class="container" id="suggestion-of-day">
+        <div class="text">Suggestion du jour</div>
+      </div></router-link
+    >
+    <router-link to="/carnetDegustation"
+      ><div class="container" id="degustation-book">
+        <div class="text">Cahier de degustation</div>
+      </div></router-link
+    >
   </div>
 </template>
 
@@ -42,10 +53,13 @@ h1 {
 }
 .text {
   color: var(--grey-light);
+  font-family: var(--font);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
 }
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 #my-cellar {
@@ -59,7 +73,7 @@ h1 {
 }
 #last-add {
   box-sizing: border-box;
-  width: 138px;
+  width: 152px;
   height: 152px;
   background-image: url("../assets/dernier-ajout.jpeg");
   background-size: cover;
@@ -68,7 +82,7 @@ h1 {
 }
 #next-one {
   box-sizing: border-box;
-  width: 138px;
+  width: 152px;
   height: 152px;
   background-image: url("../assets/la-prochaine.jpeg");
   background-size: cover;
