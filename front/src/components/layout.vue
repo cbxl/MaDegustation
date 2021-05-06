@@ -1,7 +1,7 @@
 <template>
   <nav role="navigation">
     <div class="logo"></div>
-    <h1 class="title">Accueil</h1>
+    <h1 class="title">{{ this.name }}</h1>
     <Menu
       class="menuBurger"
       v-bind="this.$attrs"
@@ -15,7 +15,7 @@
       <router-link to="/maBouteille">Dernier ajout</router-link>
       <router-link to="/maBouteille">La prochaine</router-link>
       <router-link to="/maBouteille">Suggestion du jour</router-link>
-      <router-link to="/livreDegustation">Cahier de degustations</router-link>
+      <router-link to="/carnetDegustation">Cahier de degustations</router-link>
     </Menu>
   </nav>
 </template>
@@ -23,10 +23,12 @@
 <script>
 import Menu from "./menu";
 export default {
+  props: ["name"],
   name: "slide",
   components: {
     Menu: Menu,
   },
+
   methods: {
     openMenu() {
       this.$emit("openMenu");
@@ -52,9 +54,11 @@ nav {
 
 .logo {
   grid-area: logo;
-  position: relative;
-  background-size: cover;
   background-image: url("../assets/logo-tire-bouchon.png");
+  height: 60px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: unset;
 }
 .title {
   grid-area: title;
