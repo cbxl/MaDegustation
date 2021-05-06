@@ -59,7 +59,7 @@ h1 {
 }
 #last-add {
   box-sizing: border-box;
-  width: 140px;
+  width: 138px;
   height: 152px;
   background-image: url("../assets/dernier-ajout.jpeg");
   background-size: cover;
@@ -68,7 +68,7 @@ h1 {
 }
 #next-one {
   box-sizing: border-box;
-  width: 140px;
+  width: 138px;
   height: 152px;
   background-image: url("../assets/la-prochaine.jpeg");
   background-size: cover;
@@ -83,6 +83,7 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 4vh;
 }
 #degustation-book {
   box-sizing: border-box;
