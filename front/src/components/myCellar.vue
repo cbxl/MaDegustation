@@ -43,11 +43,17 @@
         </label>
       </div>
     </div>
+    <Card />
   </div>
 </template>
 
 <script>
-export default {};
+import Card from "./layout/card"
+export default {
+  components: {
+    Card,
+  },
+};
 </script>
 
 <style scoped>
